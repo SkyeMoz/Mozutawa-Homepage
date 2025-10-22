@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: url("images/bg.jpg") center/cover fixed no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+canvas#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  text-shadow: 0 0 15px #ff007f;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+  opacity: 0.85;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.btn.read {
+  background: #ff3333;
+  color: #fff;
+}
+
+.btn.blog {
+  background: #ffffff;
+  color: #000;
+}
+
+.btn.discord {
+  background: #a855f7;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  filter: brightness(1.15);
+}
